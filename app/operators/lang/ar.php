@@ -351,20 +351,12 @@ $l['all']['BatchCost'] = "تكلفة الدفعة";
 
 $l['all']['PaymentDate'] = "تاريخ الدفع";
 $l['all']['PaymentStatus'] = "حالة الدفع";
-$l['all']['PaidAmount'] = "Payment Amount";
-$l['all']['BusinessShortcode'] = "Paybill Number";
-$l['all']['ReferenceNo'] = "Reference No";
-$l['all']['InvoiceNo'] = "Invoice No";
-$l['all']['BusinessAccountBalance'] = "Account Balance";
-$l['all']['ThirdPartyTransID'] = "Third Party Trans ID";
 $l['all']['FirstName'] = "الاسم الاول";
 $l['all']['LastName'] = "الاسم الاخير";
 $l['all']['VendorType'] = "التاجر";
-$l['all']['TransactionType'] = "Transaction Type";
 $l['all']['PayerStatus'] = "حالة الدافع";
 $l['all']['PaymentAddressStatus'] = "حالة عنوان الدفع";
 $l['all']['PayerEmail'] = "البريد الإلكتروني للدافع";
-$l['all']['PayerPhone'] = "Payer Phone";
 $l['all']['TxnId'] = "معرف التحويل";
 $l['all']['PlanActive'] = "خطة نشطة";
 $l['all']['PlanTimeType'] = "نوع وقت الخطة";
@@ -1084,9 +1076,6 @@ $l['Intro']['billratesnew.php'] = "اضافة تسعير جديد";
 $l['Intro']['paypalmain.php'] = "PayPal Transactions Page";
 $l['Intro']['billpaypaltransactions.php'] = "PayPal Transactions Page";
 
-$l['Intro']['mpesamain.php'] = "Mpesa Transactions Page";
-$l['Intro']['billmpesatransactions.php'] = "Mpesa Transactions Page";
-
 $l['Intro']['billhistoryquery.php'] = "سجل المستحقات";
 
 $l['Intro']['billinvoice.php'] = "فواتير مستحقة";
@@ -1251,7 +1240,6 @@ $l['helpPage']['repnewusers'] = "المستخدمين الجدد الذين تم
 $l['helpPage']['login'] = "الدخول";
 
 $l['helpPage']['billpaypaltransactions'] = "List all PayPal transactions";
-$l['helpPage']['billmpesatransactions'] = "List all Mpesa transactions";
 $l['helpPage']['billhistoryquery'] = "List all billing history for a user(s)";
 
 $l['helpPage']['billinvoicereport'] = "";
@@ -1785,7 +1773,6 @@ $l['submenu']['POS'] = "نقطة البيع";
 $l['submenu']['Plans'] = "الخطط";
 $l['submenu']['Rates'] = "الأسعار";
 $l['submenu']['Merchant-Transactions'] = "تحويلات التاجر";
-$l['submenu']['Mpesa-Transactions'] = "تحويلات التاجر";
 $l['submenu']['Billing-History'] = "تاريخ الفوترة";
 $l['submenu']['Invoices'] = "الفواتير";
 $l['submenu']['Payments'] = "المدفوعات";

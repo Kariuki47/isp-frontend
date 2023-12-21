@@ -337,10 +337,10 @@
     $extra_css = array();
 
     $extra_js = array(
-        "../common/static/js/ajax.js",
-        "../common/static/js/dynamic_attributes.js",
-        "../common/static/js/ajaxGeneric.js",
-        "../common/static/js/productive_funcs.js",
+        "static/js/ajax.js",
+        "static/js/dynamic_attributes.js",
+        "static/js/ajaxGeneric.js",
+        "static/js/productive_funcs.js",
     );
 
     $title = t('Intro','mngnew.php');

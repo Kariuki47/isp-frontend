@@ -353,20 +353,12 @@ $l['all']['BatchCost'] = "批量花费";
 
 $l['all']['PaymentDate'] = "付款日";
 $l['all']['PaymentStatus'] = "付款状态";
-$l['all']['PaidAmount'] = "Payment Amount";
-$l['all']['BusinessShortcode'] = "Paybill Number";
-$l['all']['ReferenceNo'] = "Reference No";
-$l['all']['InvoiceNo'] = "Invoice No";
-$l['all']['BusinessAccountBalance'] = "Account Balance";
-$l['all']['ThirdPartyTransID'] = "Third Party Trans ID";
 $l['all']['FirstName'] = "名";
 $l['all']['LastName'] = "姓";
 $l['all']['VendorType'] = "设备类型";
-$l['all']['TransactionType'] = "Transaction Type";
 $l['all']['PayerStatus'] = "付款人状态";
 $l['all']['PaymentAddressStatus'] = "付款地址状态";
 $l['all']['PayerEmail'] = "付款日Email";
-$l['all']['PayerPhone'] = "Payer Phone";
 $l['all']['TxnId'] = "交易ID";
 $l['all']['PlanActive'] = "活动计划";
 $l['all']['PlanTimeType'] = "计划时间类型";
@@ -1090,9 +1082,6 @@ $l['Intro']['billratesnew.php'] = "新建利率列表";
 $l['Intro']['paypalmain.php'] = "PayPal交易页面";
 $l['Intro']['billpaypaltransactions.php'] = "PayPal交易页面";
 
-$l['Intro']['mpesamain.php'] = "Mpesa Transactions Page";
-$l['Intro']['billmpesatransactions.php'] = "Mpesa Transactions Page";
-
 $l['Intro']['billhistoryquery.php'] = "记账历史";
 
 $l['Intro']['billinvoice.php'] = "会计账单";
@@ -1256,7 +1245,6 @@ $l['helpPage']['repnewusers'] = "下拉表显示了每个月创建的新用户."
 $l['helpPage']['login'] = "";
 
 $l['helpPage']['billpaypaltransactions'] = "显示所有支付宝交易";
-$l['helpPage']['billmpesatransactions'] = "List all Mpesa transactions";
 $l['helpPage']['billhistoryquery'] = "显示所有用户计费历史(年代)";
 
 $l['helpPage']['billinvoicereport'] = "";
@@ -1857,7 +1845,6 @@ $l['submenu']['POS'] = "POS";
 $l['submenu']['Plans'] = "Plans";
 $l['submenu']['Rates'] = "Rates";
 $l['submenu']['Merchant-Transactions'] = "Merchant-Transactions";
-$l['submenu']['Mpesa-Transactions'] = "Mpesa-Transactions";
 $l['submenu']['Billing-History'] = "Billing-History";
 $l['submenu']['Invoices'] = "Invoices";
 $l['submenu']['Payments'] = "Payments";

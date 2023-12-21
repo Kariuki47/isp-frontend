@@ -65,8 +65,8 @@
     $extra_css = array();
 
     $extra_js = array(
-        "../common/static/js/ajax.js",
-        "../common/static/js/dynamic_attributes.js",
+        "static/js/ajax.js",
+        "static/js/dynamic_attributes.js",
     );
 
     $title = t('Intro','accthotspotcompare.php');

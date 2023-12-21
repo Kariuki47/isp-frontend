@@ -187,7 +187,7 @@
     $extra_css = array();
     
     $extra_js = array(
-        "../common/static/js/productive_funcs.js",
+        "static/js/productive_funcs.js",
     );
     
     $title = t('Intro','configoperatorsedit.php');

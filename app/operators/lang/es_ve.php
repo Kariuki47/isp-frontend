@@ -257,18 +257,11 @@ $l['all']['Month'] = "Mes";
 
 $l['all']['PaymentDate'] = "Fecha de pago";
 $l['all']['PaymentStatus'] = "Estado del pago";
-$l['all']['PaidAmount'] = "Payment Amount";
-$l['all']['BusinessShortcode'] = "Paybill Number";
-$l['all']['ReferenceNo'] = "Reference No";
-$l['all']['InvoiceNo'] = "Invoice No";
-$l['all']['BusinessAccountBalance'] = "Account Balance";
-$l['all']['ThirdPartyTransID'] = "Third Party Trans ID";
 $l['all']['FirstName'] = "Nombre";
 $l['all']['LastName'] = "Apellido";
 $l['all']['PayerStatus'] = "Estado del pagador";
 $l['all']['PaymentAddressStatus'] = "Estado de la direcci&oacute;n del pagador";
 $l['all']['PayerEmail'] = "Correo del pagador";
-$l['all']['PayerPhone'] = "Payer Phone";
 $l['all']['TxnId'] = "Id de la transacci&oacute;n";
 $l['all']['PlanTimeType'] = "Plan Time Type";
 $l['all']['PlanTimeBank'] = "Plan Time Bank";
@@ -768,9 +761,6 @@ $l['Intro']['billratesnew.php'] = "Nueva tarifa";
 $l['Intro']['paypalmain.php'] = "Transacciones por PayPal";
 $l['Intro']['billpaypaltransactions.php'] = "Transacciones por PayPal";
 
-$l['Intro']['mpesamain.php'] = "Mpesa Transactions Page";
-$l['Intro']['billmpesatransactions.php'] = "Mpesa Transactions Page";
-
 $l['Intro']['billhistoryquery.php'] = "Hist&oacute;rico de cobros";
 
 $l['Intro']['billplans.php'] = "Planes de pago";
@@ -905,7 +895,6 @@ $l['captions']['filldetailsofnewrate'] = "Complete los detelles de la nueva tari
 $l['helpPage']['login'] = "";
 
 $l['helpPage']['billpaypaltransactions'] = "Listado de todas las transacciones de PayPal";
-$l['helpPage']['billmpesatransactions'] = "List all Mpesa transactions";
 $l['helpPage']['billhistoryquery'] = "Listado del historial de facturaci&oacute;n de uno o varios usuarios";
 
 $l['helpPage']['billplanslist'] = "";
@@ -1455,7 +1444,6 @@ $l['submenu']['POS'] = "POS";
 $l['submenu']['Plans'] = "Plans";
 $l['submenu']['Rates'] = "Rates";
 $l['submenu']['Merchant-Transactions'] = "Merchant-Transactions";
-$l['submenu']['Mpesa-Transactions'] = "Mpesa-Transactions";
 $l['submenu']['Billing-History'] = "Billing-History";
 $l['submenu']['Invoices'] = "Invoices";
 $l['submenu']['Payments'] = "Payments";

@@ -80,8 +80,8 @@
                     ? $_GET['payment_status'] : "";
 	
     // print HTML prologue
-    $title = t('Intro','billmpesatransactions.php');
-    $help = t('helpPage','billmpesatransactions');
+    $title = t('Intro','billpaypaltransactions.php');
+    $help = t('helpPage','billpaypaltransactions');
     
     print_html_prologue($title, $langCode);
     

@@ -84,8 +84,8 @@
     $extra_css = array();
     
     $extra_js = array(
-        "../common/static/js/ajax.js",
-        "../common/static/js/ajaxGeneric.js",
+        "static/js/ajax.js",
+        "static/js/ajaxGeneric.js",
     );
     
     $title = t('Intro','billratesdate.php');
