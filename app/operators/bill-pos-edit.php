@@ -63,7 +63,7 @@
 
             // if profiles are associated with this plan, loop through each and add a usergroup entry for each
             foreach($cols as $profile_name) {
-                $sql = sprintf("INSERT INTO %s (username, groupname, priority) VALUES ('%s','%s','0')",
+                $sql = sprintf("INSERT INTO %s (username, groupname, priority) VALUES ('%s','%s','1')",
                                $configValues['CONFIG_DB_TBL_RADUSERGROUP'],
                                $dbSocket->escapeSimple($username),
                                $dbSocket->escapeSimple($profile_name));
