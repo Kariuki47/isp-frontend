@@ -81,7 +81,6 @@ $subnav["bill"] = array(
                             'Plans' => 'bill-plans.php',
                             'Rates' => 'bill-rates.php',
                             'Merchant-Transactions' => 'bill-merchant.php',
-                            'Mpesa-Transactions' => 'bill-mpesa.php',
                             'Billing-History' => 'bill-history.php',
                             'Invoices' => 'bill-invoice.php',
                             'Payments' => 'bill-payments.php',
