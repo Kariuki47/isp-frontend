@@ -233,6 +233,41 @@ $bill_merchant_transactions_options_default = array(
                                                         "vendor_type"
                                                    );
 
+$bill_mpesa_transactions_options_all = array(
+                                                    "id" => t('all','ID'),
+                                                    "txn_type" => t('all','TransactionType'),
+                                                    "txn_id"  => t('all','TxnId'),
+                                                    "payment_date" => t('all','PaymentDate'),
+                                                    "payment_amount" => t('all','PaidAmount'),
+                                                    "business_shortcode" => t('all','BusinessShortcode'),
+                                                    "ref_no"  => t('all','ReferenceNo'),
+                                                    "inv_no"  => t('all','InvoiceNo'),
+                                                    "business_acc_balance"  => t('all','BusinessAccountBalance'),
+                                                    "third_party_trans_ID"  => t('all','ThirdPartyTransID'),
+                                                    "payer_phone" => t('all','PayerPhone'),
+                                                    "first_name" => t('all','FirstName'),
+                                                    "middle_name" => t('all','MiddleName'),
+                                                    "last_name" => t('all','LastName'),
+                                                    "payment_status" => t('all','PaymentStatus')
+                                               );
+
+$bill_mpesa_transactions_options_default = array(
+                                                    "txn_type",
+                                                    "txn_id",
+                                                    "payment_date",
+                                                    "payment_amount",
+                                                    "business_shortcode",
+                                                    "ref_no",
+                                                    "inv_no",
+                                                    "business_acc_balance",
+                                                    "third_party_trans_ID",
+                                                    "payer_phone",
+                                                    "first_name",
+                                                    "middle_name",
+                                                    "last_name",
+                                                    "payment_status"
+                                           );
+
 // validating values
 
 $valid_paymentStatus = array(

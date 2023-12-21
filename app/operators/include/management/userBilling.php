@@ -525,3 +525,117 @@ EOF;
 
     }
 }
+
+/*
+ *********************************************************************************************************
+ * userBillingMpesaSummary
+ * $startdate        starting date, first accounting session
+ * $enddate        ending date, last accounting session
+ * $drawTable           if set to 1 (enabled) a toggled on/off table will be drawn
+ *
+ * returns user connection information: uploads, download, session time, total billed, etc...
+ *
+ *********************************************************************************************************
+ */
+function userBillingMpesaSummary($startdate, $enddate, $payer_phone, $payment_status, $txn_type, $drawTable) {
+    global $logDebugSQL;
+
+    include('../common/includes/db_open.php');
+
+    $sql_WHERE = array();
+
+    if (!empty($startdate)) {
+        $sql_WHERE[] = sprintf("payment_date > '%s'", $dbSocket->escapeSimple($startdate));
+    }
+
+    if (!empty($startdate)) {
+        $sql_WHERE[] = sprintf("payment_date < '%s'", $dbSocket->escapeSimple($enddate));
+    }
+
+    if (!empty($payer_phone)) {
+        $sql_WHERE[] = sprintf("payer_phone LIKE '%s%%'", $dbSocket->escapeSimple($payer_phone));
+    }
+
+    if (!empty($payment_status)) {
+        $sql_WHERE[] = sprintf("payment_status='%s'", $dbSocket->escapeSimple($payment_status));
+    }
+
+    if (!empty($txn_type)) {
+        $sql_WHERE[] = sprintf("txn_type='%s'", $dbSocket->escapeSimple($txn_type));
+    }
+
+    $sql = "SELECT * FROM billing_mpesa";
+    if (count($sql_WHERE) > 0) {
+        $sql .= " WHERE " . implode(" AND ", $sql_WHERE);
+
+    }
+
+    //$sql .= " GROUP BY Username";
+    $logDebugSQL .= "$sql;\n";
+    $res = $dbSocket->query($sql);
+
+    if ($res->numRows() > 0 && $drawTable == 1) {
+
+        include_once('include/management/pages_common.php');
+
+        $row = $res->fetchRow();
+
+        for ($i=0; $i < count($row); $i++) {
+            $row[$i] = htmlspecialchars($row[$i], ENT_QUOTES, 'UTF-8');
+        }
+
+        list( $payer_phone, $planName, $planId, $planTotalCost, $planTotalFee, $planTotalTax,
+              $planCurrency, $sessionTime, $userUpload, $userDownload ) = $row;
+
+        $grossGain = $planTotalCost - ($planTotalTax + $planTotalFee);
+
+        $userUpload = toxbyte($userUpload);
+        $userDownload = toxbyte($userDownload);
+        $userOnlineTime = time2str($sessionTime);
+
+        if ($drawTable == 1) {
+            $modal_id = "modal_" . rand();
+
+            $table = array();
+            $table['title'] = "Billing Summary";
+
+            $table['rows'] = array(
+                                        array( "Username", "$username (email: $payer_email)" ),
+                                        array( "Billing for period of", "$startdate until $enddate (inclusive)" ),
+                                        array( "Online Time", $userOnlineTime ),
+                                        array( "User Upload", $userUpload ),
+                                        array( "User Download", $userDownload ),
+                                        array( "Plan name", "$planName (planId: $planId)" ),
+                                        array( "Total Plans Cost <br/> Total Transaction Fees <br/> Total Transaction Taxs",
+                                               "$planTotalCost <br/> $planTotalFee <br/> $planTotalTax" ),
+                                        array( "Gross Gain", "$grossGain $planCurrency" )
+                                  );
+
+            echo <<<EOF
+    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#{$modal_id}">Show {$table['title']}</button>
+
+    <div class="modal fade" id="{$modal_id}" tabindex="-1" aria-labelledby="{$modal_id}_label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="{$modal_id}_label">{$table['title']}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+EOF;
+            print_simple_table($table);
+
+            echo <<<EOF
+                </div>
+            </div>
+        </div>
+    </div>
+
+EOF;
+        }
+
+    include('../common/includes/db_close.php');
+
+    }
+}
