@@ -382,12 +382,20 @@ $l['all']['BatchCost'] = "バッチコスト";
 $l['all']['PaymentDate'] = "支払日";
 
 $l['all']['PaymentStatus'] = "支払い状況";
+$l['all']['PaidAmount'] = "Payment Amount";
+$l['all']['BusinessShortcode'] = "Paybill Number";
+$l['all']['ReferenceNo'] = "Reference No";
+$l['all']['InvoiceNo'] = "Invoice No";
+$l['all']['BusinessAccountBalance'] = "Account Balance";
+$l['all']['ThirdPartyTransID'] = "Third Party Trans ID";
 $l['all']['FirstName'] = "姓";
 $l['all']['LastName'] = "名";
 $l['all']['VendorType'] = "ベンダー";
+$l['all']['TransactionType'] = "Transaction Type";
 $l['all']['PayerStatus'] = "支払者ステータス";
 $l['all']['PaymentAddressStatus'] = "支払い者住所ステータス";
 $l['all']['PayerEmail'] = "支払者 Eメール";
+$l['all']['PayerPhone'] = "Payer Phone";
 $l['all']['TxnId'] = "取引ID";
 
 $l['all']['PlanActive'] = "プランをアクティブにする";
@@ -1174,6 +1182,9 @@ $l['Intro']['billratesnew.php'] = "レートエントリ新規作成";
 $l['Intro']['paypalmain.php'] = "PayPal取引ページ";
 $l['Intro']['billpaypaltransactions.php'] = "PayPal取引ページ";
 
+$l['Intro']['mpesamain.php'] = "Mpesa Transactions Page";
+$l['Intro']['billmpesatransactions.php'] = "Mpesa Transactions Page";
+
 $l['Intro']['billhistoryquery.php'] = "課金履歴";
 
 $l['Intro']['billinvoice.php'] = "支払い請求書";
@@ -1377,6 +1388,7 @@ $l['helpPage']['repnewusers'] = "以下の表は月ごとに新しく作成さ�
 $l['helpPage']['login'] = "";
 
 $l['helpPage']['billpaypaltransactions'] = "全てのPayPal取引を一覧表示します";
+$l['helpPage']['billmpesatransactions'] = "List all Mpesa transactions";
 $l['helpPage']['billhistoryquery'] = "ユーザの全ての課金履歴を一覧表示します";
 
 $l['helpPage']['billinvoicereport'] = "";
@@ -2034,6 +2046,7 @@ $l['submenu']['POS'] = "POS";
 $l['submenu']['Plans'] = "Plans";
 $l['submenu']['Rates'] = "Rates";
 $l['submenu']['Merchant-Transactions'] = "Merchant-Transactions";
+$l['submenu']['Mpesa-Transactions'] = "Mpesa-Transactions";
 $l['submenu']['Billing-History'] = "Billing-History";
 $l['submenu']['Invoices'] = "Invoices";
 $l['submenu']['Payments'] = "Payments";

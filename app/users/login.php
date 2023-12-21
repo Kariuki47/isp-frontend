@@ -47,13 +47,13 @@ $dir = (strtolower($langCode) === 'ar') ? "rtl" : "ltr";
     <meta name="copyright" content="Liran Tal & Filippo Lauria">
     <meta name="robots" content="noindex">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../common/static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../common/static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../common/static/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../common/static/images/favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../common/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/static/css/icons/bootstrap-icons.css">
 
     <style>
 html, body {
@@ -95,7 +95,7 @@ body {
 <body>
     <main class="form-login w-100 m-auto">
     <form action="dologin.php" method="POST">
-    <img class="mb-4" src="static/images/daloradius_small.png" alt="daloRADIUS" width="135" height="41">
+    <img class="mb-4" src="../common/static/images/daloradius_small.png" alt="daloRADIUS" width="135" height="41">
     <h1 class="h3 mb-3 fw-normal d-flex align-items-center">
         <button class="btn btn-link btn-lg" data-bs-toggle="modal" data-bs-target="#welcome-modal">
             <i class="bi bi-info-circle-fill"></i>
@@ -164,7 +164,7 @@ EOF;
 
     </main>
 
-    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="../common/static/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

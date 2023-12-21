@@ -39,5 +39,5 @@ if (strpos($_SERVER['PHP_SELF'], '/library/extensions/welcome_page.php') !== fal
         &amp;
         <a class="text-decoration-none" title="Mail to Filippo Lauria" href="mailto:Filippo Lauria &lt;filippo.lauria@iit.cnr.it&gt;">Filippo Lauria</a>
     </h4>
-    <img class="my-3" src="static/images/daloradius_logo.jpg">
+    <img class="my-3" src="../common/static/images/daloradius_logo.jpg">
 </div>

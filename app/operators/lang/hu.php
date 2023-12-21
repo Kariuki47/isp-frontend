@@ -254,11 +254,18 @@ $l['all']['Month'] = "Hónap";
 
 $l['all']['PaymentDate'] = "Payment Date";
 $l['all']['PaymentStatus'] = "Payment Status";
+$l['all']['PaidAmount'] = "Payment Amount";
+$l['all']['BusinessShortcode'] = "Paybill Number";
+$l['all']['ReferenceNo'] = "Reference No";
+$l['all']['InvoiceNo'] = "Invoice No";
+$l['all']['BusinessAccountBalance'] = "Account Balance";
+$l['all']['ThirdPartyTransID'] = "Third Party Trans ID";
 $l['all']['FirstName'] = "First name";
 $l['all']['LastName'] = "Last name";
 $l['all']['PayerStatus'] = "Payer Status";
 $l['all']['PaymentAddressStatus'] = "Payment Address Status";
 $l['all']['PayerEmail'] = "Payer Email";
+$l['all']['PayerPhone'] = "Payer Phone";
 $l['all']['TxnId'] = "Tranasction Id";
 $l['all']['PlanTimeType'] = "Plan Time Type";
 $l['all']['PlanTimeBank'] = "Plan Time Bank";
@@ -812,6 +819,9 @@ $l['Intro']['billratesnew.php'] = "Új díjtétel";
 $l['Intro']['paypalmain.php'] = "PayPal Transactions Page";
 $l['Intro']['billpaypaltransactions.php'] = "PayPal Transactions Page";
 
+$l['Intro']['mpesamain.php'] = "Mpesa Transactions Page";
+$l['Intro']['billmpesatransactions.php'] = "Mpesa Transactions Page";
+
 $l['Intro']['billhistoryquery.php'] = "Billing History";
 
 $l['Intro']['billplans.php'] = "Billing Plans Page";
@@ -946,6 +956,7 @@ $l['captions']['filldetailsofnewrate'] = "Fill below the details for the new rat
 $l['helpPage']['login'] = "";
 
 $l['helpPage']['billpaypaltransactions'] = "List all PayPal transactions";
+$l['helpPage']['billmpesatransactions'] = "List all Mpesa transactions";
 $l['helpPage']['billhistoryquery'] = "List all billing history for a user(s)";
 
 $l['helpPage']['billplanslist'] = "";
@@ -1494,6 +1505,7 @@ $l['submenu']['POS'] = "POS";
 $l['submenu']['Plans'] = "Plans";
 $l['submenu']['Rates'] = "Rates";
 $l['submenu']['Merchant-Transactions'] = "Merchant-Transactions";
+$l['submenu']['Mpesa-Transactions'] = "Mpesa-Transactions";
 $l['submenu']['Billing-History'] = "Billing-History";
 $l['submenu']['Invoices'] = "Invoices";
 $l['submenu']['Payments'] = "Payments";

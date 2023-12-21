@@ -32,7 +32,7 @@
     include("../common/includes/layout.php");
 
     // print HTML prologue
-    $title = t('Intro','Mpesa Transactions Page');
+    $title = t('Intro','mpesamain.php');
     $help = "";
     
     print_html_prologue($title, $langCode);

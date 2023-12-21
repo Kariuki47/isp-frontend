@@ -27,16 +27,16 @@ if (strpos($_SERVER['PHP_SELF'], '/library/layout.php') !== false) {
 }
 
 const DEFAULT_COMMON_PROLOGUE_CSS = array(
-    "static/css/bootstrap.min.css",
-    "static/css/icons/bootstrap-icons.css",
+    "../common/static/css/bootstrap.min.css",
+    "../common/static/css/icons/bootstrap-icons.css",
 );
 
 const DEFAULT_COMMON_PROLOGUE_JS = array(
-    "static/js/pages_common.js",
+    "../common/static/js/pages_common.js",
 );
 
 const DEFAULT_COMMON_EPILOGUE_JS = array(
-    "static/js/bootstrap.bundle.min.js",
+    "../common/static/js/bootstrap.bundle.min.js",
 );
 
 
@@ -67,10 +67,10 @@ function print_html_prologue($title, $lang='en', $extra_css=array(), $extra_js=a
 <meta name="copyright" content="Liran Tal & Filippo Lauria">
 <meta name="robots" content="noindex">
 
-<link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
-<link rel="manifest" href="static/images/favicon/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="../common/static/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../common/static/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../common/static/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="../common/static/images/favicon/site.webmanifest">
 
 EOF;
 
@@ -151,7 +151,7 @@ EOF;
         <div class="p-4 text-center text-bg-light border-top border-bottom">
             <div class="d-flex align-items-center">
                 <div class="flex-shrink-0 text-bg-white">
-                    <img src="static/images/daloradius_small.png">
+                    <img src="../common/static/images/daloradius_small.png">
                 </div>
                 <div class="flex-grow-1 ms-3">
 EOF;

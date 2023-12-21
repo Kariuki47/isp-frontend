@@ -35,7 +35,7 @@ $cat_subcat_tree = array(
                                             "rad-profiles", "rad-hunt", "rad-attributes", "rad-realms", "rad-ippool", ),
                             "rep" => array( "logs", "stat", "batch", "hb", ),
                             "acct" => array( "plans", "custom", "hotspot", "maintenance", ),
-                            "bill" => array( "plans", "rates", "merchant", "history", "invoice", "payments", ),
+                            "bill" => array( "plans", "rates", "merchant", "mpesa", "history", "invoice", "payments", ),
                             "gis" => array(),
                             "graphs" => array(),
                             "config" => array( "reports", "maint", "operators", "backup", ),
